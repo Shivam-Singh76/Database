@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS TEACHER;
+
+CREATE TABLE IF NOT EXISTS TEACHER (
+    TEACHER_Mail_id VARCHAR(100) NOT NULL,
+    TECHER_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    course_name VARCHAR(100) NOT NULL,
+    TEACHER_PHONE_NO BIGINT,  
+    Teacher_Attendence_Percentage INT,
+    Report_Generator BOOLEAN,
+    ID_of_Student INT
+);
+
+ 
+INSERT INTO TEACHER VALUES
+('ravi.singh@mail.com', 101, 'Ravi Singh', 'Math', 9876543210, 95, TRUE, 70);
+SELECT * FROM TEACHER;
+
